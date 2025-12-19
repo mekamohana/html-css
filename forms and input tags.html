@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <title>forms and input tags</title>
+ <style>
+     body{
+        background-color: rgb(211, 220, 217);
+        text-align: center;
+       
+     }
+     h1{
+        color: brown;
+     }
+
+    
+     
+
+ </style>
+</head>
+<body>
+   <h1>Student Admission Form</h1>
+   <form action="backend.php">
+    <!--label tag  -->
+    <label for="studentname">Name</label>
+    <!--VALUe attiribute  will be filled up by the user .
+     id and class helps in styling your elements with help of css .u can refer id and class
+    -->
+     <div>
+     <input type="text" name="student name"  value="" placeholder="Enter your name" id="studentname" class="">
+     </div>
+     <br>
+    <label for="contact number">Contact number</label>
+     <div>
+     <input type="text" name="contact" placeholder="Enter your Phone no." id="contact number">
+     </div>
+     <br>
+
+     <div>
+     Email:<input type="email" name="email" id="" placeholder="Enter your email id">
+     </div>
+     <br>
+     <!--div acts as a container.container is like a box it is a storage device where u store something.you can store any html element or input-->
+     <!--radio button -->
+     <div>
+        
+        
+        Gender:Male <input type="radio" name="gender" id="">
+        Female<input type="radio" name="gender" id="">
+        Gender:Male <input type="radio" name="gender1" id="">
+        Female<input type="radio" name="gender2" id="">
+        
+     </div>
+     <br>
+     <!--checkbox is do you installing proces,do you accept terms and conditions-->
+     <div>
+      Do you accept terms and conditions<input type="checkbox" name="checkbox"id="" checked>
+     </div>
+     <br>
+     <div>
+        DOB:<input type="date" name="dob" id="">
+     </div><br>
+     <div>
+        <!--/*is all the file format to image it whether it be jpg,png,gif any file format accepted-->
+        Upload your image:<input type="file" name="file" accept="image/*">
+     </div><br>
+      Residential Address:<br><textarea name="address" id="" cols="30" rows="10"></textarea><br>
+
+      <!--selected tag is where you have a dropdown options-->
+      Web Dev<select name="options" id="">
+        <option value="">Frontend</option>
+         <option value="">Backend</option>
+          <option value="" selected>Fullstack</option>
+
+      </select><br>
+      <br>
+      <input type="submit" value=" submit form">
+      <input type="reset" value="reset form" >
+      <input type="button" value="" >
+      
+      
+       </form>
+
+</body>
+</html>
